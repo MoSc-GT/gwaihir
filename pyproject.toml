@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rocket-opt"
+version = "0.1.0"
+description = "GUI für Optimalsteuerungsprobleme in der Luft- und Raumfahrt"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pyside6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+rocket-opt = "rocket_opt.gui.main_window:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

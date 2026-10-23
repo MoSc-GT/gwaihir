@@ -1,0 +1,11 @@
+﻿{
+  "name": "Beispielrakete",
+  "stages": [
+    {
+      "dry_mass_kg": 12000,
+      "propellant_mass_kg": 80000,
+      "max_thrust_n": 1800000,
+      "specific_impulse_s": 300
+    }
+  ]
+}
